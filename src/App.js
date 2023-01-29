@@ -115,7 +115,7 @@ class App extends Component {
     return (
       <>
         {shoModal && (
-          <Modal>
+          <Modal onClose={this.toggleModal}>
             <h2>Привет это контент модалки Children</h2>
             <p>
               Привет это контент модалки Children Привет это контент модалки

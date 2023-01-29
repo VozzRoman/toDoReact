@@ -8,6 +8,12 @@ const modalRoot = document.querySelector("#modal-root");
 export class Modal extends Component {
   componentDidMount() {
     console.log("Modal DidMount");
+    window.addEventListener("keydown", (e) => {
+      if (e.code === "Escape") {
+        console.log("Esc");
+        this.props.onClose();
+      }
+    });
   }
 
   componentWillUnmount() {
