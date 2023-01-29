@@ -1,0 +1,14 @@
+.filter__box {
+  display: flex;
+  justify-content: center;
+}
+
+.filter__todo {
+  margin-left: 40px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.filter__label {
+  font-size: 17px;
+  font-weight: 600;
+}
